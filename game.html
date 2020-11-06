@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div>
+        <canvas id="gameCanvas" width="1350" height="660"></canvas>
+        <div class="modal-bg" id="toggle-popup">
+            <div id="overlay" class="modal-content">
+                <div class="close" onclick="history.go(-1)">+</div>
+                <div >
+                    <img src="./images/trophy1.png" class="center">
+                </div>
+                <div id="result">
+                    <h2 id="winner">wins</h2>
+                    <button type="button" onclick="history.go(0)" class="btn">Try again</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src="car.js"></script>
+    <script src="imageLoading.js"></script>
+    <script src="app.js"></script>
+    <script src="graphicsCommon.js"></script>
+    <script src="input.js"></script>
+    <script src="track.js"></script>
+    
+   
+   
+    
+</body>
+</html>
